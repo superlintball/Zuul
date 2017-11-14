@@ -19,7 +19,7 @@ class Room
 		Item* getItem(int index);
 		Item* getItem(char* itemName);
 		void setItem(Item* newItem);
-		char* getRoomItems();
+		void getRoomItems();
 		void takeItem(Item* toRemove);
 	protected:
 		char* description;
