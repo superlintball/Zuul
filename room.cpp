@@ -75,7 +75,7 @@ Room* Room::getExit(char* direction)
 			return it->second;
 		}
 	}
-	return exits[direction];
+	return NULL;
 }
 
 //confirm if an item is in the room
