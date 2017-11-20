@@ -68,6 +68,13 @@ void Room::displayExitString()
 //return the room that an exit points to
 Room* Room::getExit(char* direction)
 {
+	for(map<char*,Room*>::iterator it = exits.begin(); it != exits.end(); it++)
+	{
+		if(strcmp(it->first,direction)==0)
+		{
+			return it->second;
+		}
+	}
 	return exits[direction];
 }
 
